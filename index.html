@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Journalière</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Gestionnaire de Tâches</h1> 
+        <input type="text" id="taskInput" placeholder="Ajouter une tâche...">
+        <button onclick="addTask()">Ajouter</button>
+        
+        <div class="tasks-container">
+		<h2>TO DO</h2>
+            <div class="task-section" id="todo">
+                <ul id="todoList"></ul>
+            </div>
+		<h2>TO BE DONE</h2>
+            <div class="task-section" id="tobedone">
+                <ul id="tobedoneList"></ul>
+            </div>
+		<h2>DONE</h2>	
+            <div class="task-section" id="done">
+                <ul id="doneList"></ul>
+            </div>
+		<h2>CANCEL</h2>
+            <div class="task-section" id="cancel">
+                <ul id="cancelList"></ul>
+            </div>
+        </div>
+    </div>
+	<button id="resetButton">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
